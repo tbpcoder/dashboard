@@ -1,6 +1,6 @@
 :root{
     --bgc: rgb(62, 168, 255);
-    --lblue: rgb(235, 233, 233);
+    --lblue: rgb(220, 220, 220);
     margin:0px;
 }
 
@@ -13,6 +13,7 @@ html,body{
 .main{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    height: 100%;
 }
 
 .left{
@@ -38,6 +39,7 @@ html,body{
     position: sticky;
     justify-content: center;
     box-shadow: 0px 2px 40px #b9b9b9;
+    top:0;
 }
 
 .bod{
@@ -46,6 +48,7 @@ html,body{
     grid-template-columns: 3fr 1fr;
     gap: 15px;
     padding: 15px;
+    margin:0;
 }
 
 .foot{
@@ -56,12 +59,13 @@ html,body{
     grid-column: 1/-1;
     background-color: rgb(59, 23, 59);
     color: white;
+    max-height: 80px;
 }
 
 .x{
     display: grid;
     gap: 15px; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(221px, 1fr));
     grid-template-rows: repeat(2, 1fr);
 }
 
@@ -76,7 +80,6 @@ html,body{
 
 
 .bpl{
-    height: 100%;
 }
 
 
@@ -100,6 +103,7 @@ input{
     border-radius: 20px;
     border:none;
     background-color: var(--lblue);
+    padding: 10px;
 }
 
 .tp3{
@@ -123,11 +127,11 @@ input{
 
 .rtg{
     height: 170px;
-    width: auto;
     background-color: #fff;
     border-left: 5px solid rgb(255, 196, 0);
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgb(167, 167, 167);
+    min-width: 170px;
 }
 
 .lp1 h3,.lp2 h3{
@@ -139,8 +143,6 @@ input{
 .bpr{
     display: flex;
     flex-direction: column;
-    max-height: 100%;
-    overflow: auto;
 }
 
 #topic{
