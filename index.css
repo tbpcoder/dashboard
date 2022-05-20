@@ -28,6 +28,9 @@ html,body{
 
 .right{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .top{
@@ -49,6 +52,7 @@ html,body{
     gap: 15px;
     padding: 15px;
     margin:0;
+    height: 100%;
 }
 
 .foot{
@@ -77,11 +81,6 @@ html,body{
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgb(167, 167, 167);
 }
-
-
-.bpl{
-}
-
 
 .tp2{
     display: flex;
